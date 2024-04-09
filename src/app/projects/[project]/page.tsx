@@ -109,7 +109,7 @@ export default function Project({ params }: { params: { project: string } }) {
               "Check back soon for updates!",
             ]}
             githubHref="https://github.com/jamieskidmore/playlist"
-            siteHref="https://www.kvr.vercel.app"
+            siteHref="https://kvr.vercel.app"
           />
         )}
         {showWhiteStoneInfo && <WhiteStoneInfo />}
