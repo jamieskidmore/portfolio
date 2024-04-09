@@ -44,7 +44,7 @@ export default function Info({
         <h2>Technology</h2>
         <div className="space-y-2">
           {technology.map((technology, index) => (
-            <p>{technology}</p>
+            <p key={index}>{technology}</p>
           ))}
         </div>
       </div>
