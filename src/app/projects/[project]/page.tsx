@@ -53,8 +53,8 @@ export default function Project({ params }: { params: { project: string } }) {
         )}
       </div>
       <div className="w-full grid grid-cols-2 gap-4">
-        {projects.map((project) => (
-          <Link href={`/projects/${project.url}`}>
+        {projects.map((project, index) => (
+          <Link key={index} href={`/projects/${project.url}`}>
             <div className="bg-gray-800 rounded w-full p-4">
               <Image
                 src="/placeholder.png"
