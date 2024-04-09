@@ -33,7 +33,7 @@ export default function Info({
     <div className="border-2 space-y-4 px-4 my-2">
       <h1>
         Project Overview:
-        <a href="https://www.kvr.vercel.app" target="_blank">
+        <a href={siteHref} target="_blank">
           {name}
         </a>
       </h1>
