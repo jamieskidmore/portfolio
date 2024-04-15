@@ -2,10 +2,10 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <header>
-      <nav className="flex justify-between items-center py-4 px-6 text-custom-gold bg-custom-dark">
+    <header className="fixed top-0 w-full">
+      <nav className="flex justify-between items-center py-4 px-6 text-green-700 bg-gray-800">
         <div>
-          <Link href="/" className="text-xl font-bold">
+          <Link href="/" className="text-3xl font-bold">
             J
           </Link>
         </div>
@@ -13,10 +13,16 @@ export default function Navbar() {
           <Link href="/projects/all" className="mr-4">
             Projects
           </Link>
-          <a href="https://github.com/jamieskidmore" className="mr-4">
+          <a
+            href="https://github.com/jamieskidmore"
+            className="mr-4"
+            target="_blank"
+          >
             GitHub
           </a>
-          <a href="https://www.linkedin.com/in/jamieskidmore/">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/jamieskidmore/" target="_blank">
+            LinkedIn
+          </a>
         </div>
       </nav>
     </header>

@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const dmSans = DM_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Jamie Skidmore",
@@ -17,9 +18,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`bg-gray-800 ${inter.className}`}>
+      <body className={`bg-gray-800 text-gray-300 ${dmSans.className}`}>
         <Navbar />
-        {children}
+        <div className="font-light mx-5">{children}</div>
+        <Footer />
       </body>
     </html>
   );

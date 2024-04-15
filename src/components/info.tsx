@@ -30,26 +30,35 @@ export default function Info({
   siteHref: string;
 }) {
   return (
-    <div className="border-2 space-y-4 px-4 my-2">
-      <h1>
+    <div className="space-y-6 my-2">
+      <h1 className="text-6xl">
         Project Overview:
         <a href={siteHref} target="_blank">
-          {name}
+          {` ${name}`}
         </a>
       </h1>
       <div>
-        <p>{intro}</p>
+        <a
+          className="w-full flex justify-center text-3xl bg-green-700 hover:bg-gray-800 hover:text-green-700"
+          href={siteHref}
+          target="_blank"
+        >
+          Live site link
+        </a>
       </div>
       <div>
-        <h2>Technology</h2>
+        <p>{intro}</p>
+      </div>
+      <div className="space-y-4">
+        <h2 className="text-3xl">Technology</h2>
         <div className="space-y-2">
           {technology.map((technology, index) => (
             <p key={index}>{technology}</p>
           ))}
         </div>
       </div>
-      <div>
-        <h2>Key Features</h2>
+      <div className="space-y-4">
+        <h2 className="text-3xl">Key Features</h2>
         <div className="space-y-2">
           {features.map((feature, index) => (
             <div key={index}>
@@ -66,16 +75,16 @@ export default function Info({
           ))}
         </div>
       </div>
-      <div>
-        <h2>Overview</h2>
+      <div className="space-y-4">
+        <h2 className="text-3xl">Overview</h2>
         <div className="space-y-2">
           {overview.map((overview, index) => (
             <p key={index}>{overview}</p>
           ))}
         </div>
       </div>
-      <div>
-        <h2>Motivation</h2>
+      <div className="space-y-4">
+        <h2 className="text-3xl">Motivation</h2>
         <div className="space-y-2">
           <p>{motivation.description}</p>
           <div>
@@ -85,12 +94,12 @@ export default function Info({
           </div>
         </div>
       </div>
-      <div>
-        <h2>Timeline</h2>
-        <div className="space-y-2">
-          <div>
+      <div className="space-y-4">
+        <h2 className="text-3xl">Timeline</h2>
+        <div>
+          <div className="space-y-2">
             <p>{timeline.description}</p>
-            <div>
+            <div className="space-y-2">
               {timeline.entries.map((entry, index) => (
                 <p key={index}>{entry}</p>
               ))}
@@ -98,41 +107,41 @@ export default function Info({
           </div>
         </div>
       </div>
-      <div>
-        <h2>Obstables</h2>
+      <div className="space-y-4">
+        <h2 className="text-3xl">Obstables</h2>
         <div className="space-y-2">
           {obstacles.map((obstalce, index) => (
             <p key={index}>{obstalce}</p>
           ))}
         </div>
       </div>
-      <div>
-        <h2>Reflection</h2>
+      <div className="space-y-4">
+        <h2 className="text-3xl">Reflection</h2>
         <div className="space-y-2">
           {reflections.map((relflection, index) => (
             <p key={index}>{relflection}</p>
           ))}
         </div>
       </div>
-      <div className="space-y-2">
-        <h2>Next Steps</h2>
-        <div>
+      <div className="space-y-4">
+        <h2 className="text-3xl">Next Steps</h2>
+        <div className="space-y-2">
           {nextSteps.map((step, index) => (
             <p key={index}>{step}</p>
           ))}
         </div>
       </div>
 
-      <div className="grid grid-cols-2 gap-4 w-full">
+      <div className="grid grid-cols-2  w-full">
         <a
-          className="w-full flex justify-center"
+          className="w-full flex justify-center bg-green-700 hover:bg-gray-800 hover:text-green-700"
           href={githubHref}
           target="_blank"
         >
-          Github
+          View GitHub repository
         </a>
         <a
-          className="w-full flex justify-center"
+          className="w-full flex justify-center bg-green-700 hover:bg-gray-800 hover:text-green-700"
           href={siteHref}
           target="_blank"
         >
