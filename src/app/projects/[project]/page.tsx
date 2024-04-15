@@ -49,9 +49,8 @@ export default function Project({ params }: { params: { project: any } }) {
       )}
       <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-4">
         {projectData.map((project, index) => (
-          <Link href={`${project.id}`}>
+          <Link key={index} href={`${project.id}`}>
             <button
-              key={index}
               onClick={() => {
                 info === project ? setInfo({}) : setInfo(project);
               }}
