@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { projectData, skills } from "../../data";
+import Projects from "@/components/projects";
 
 export default function Home() {
   return (
@@ -13,10 +14,10 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className="w-full space-y-12">
-        <div className="space-y-10">
-          <h2 className="text-left text-3xl mb-5 ">Skills</h2>
-          <div className="grid grid-cols-2 sm:grid-cols-5 gap-y-8 gap-x-2 text-lg">
+      <div className="w-full space-y-24">
+        <div className="space-y-20">
+          <h2 className="text-left text-6xl mb-10">Skills</h2>
+          <div className="grid grid-cols-2 sm:grid-cols-5 gap-y-16 gap-x-4 text-lg">
             {skills.map((skill, index) => (
               <div key={index}>
                 <p>{skill}</p>
@@ -24,9 +25,9 @@ export default function Home() {
             ))}
           </div>
         </div>
-        <div className="space-y-10">
+        {/* <div className="space-y-20">
           <h2 className="text-left text-3xl">Projects</h2>
-          <div className="grid grid-cols-1 gap-y-8 gap-x-2 text-lg max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 gap-y-16 gap-x-4 text-lg max-w-6xl mx-auto">
             {projectData.map((project, index) => (
               <div className="space-y-6" key={index}>
                 <div>
@@ -50,7 +51,8 @@ export default function Home() {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
+        <Projects />
       </div>
     </main>
   );

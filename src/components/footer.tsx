@@ -3,8 +3,8 @@ import ContactForm from "./contact-form";
 
 export default function Footer() {
   return (
-    <div className="mt-5">
-      <div className="my-2 pl-5 text-3xl text-green-700">
+    <div>
+      <div className="my-4 pl-5 text-3xl text-green-700">
         <p>Get in touch!</p>
       </div>
       <div className="bg-green-700 p-5">

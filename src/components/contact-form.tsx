@@ -59,7 +59,7 @@ export default function ContactForm() {
   return (
     <form
       onSubmit={sendEmail}
-      className="space-y-2 text-gray-800 max-w-6xl mx-auto"
+      className="space-y-4 text-gray-800 max-w-6xl mx-auto m-4"
     >
       <div>
         <input
@@ -67,7 +67,7 @@ export default function ContactForm() {
           id="user_name"
           name="user_name"
           placeholder="Name"
-          className="p-2 border-2 border-gray-800 placeholder-gray-800 w-full bg-green-700 "
+          className="p-4 border-2 border-gray-800 placeholder-gray-800 w-full bg-green-700 "
         />
       </div>
       <div>
@@ -76,7 +76,7 @@ export default function ContactForm() {
           id="user_email"
           name="user_email"
           placeholder="Email"
-          className="p-2 border-2 border-gray-800 placeholder-gray-800 w-full bg-green-700 "
+          className="p-4 border-2 border-gray-800 placeholder-gray-800 w-full bg-green-700 "
         />
       </div>
       <div>
@@ -84,7 +84,7 @@ export default function ContactForm() {
           id="message"
           name="message"
           placeholder="Message"
-          className="p-2 border-2 border-gray-800 placeholder-gray-800 w-full bg-green-700 "
+          className="p-4 border-2 border-gray-800 placeholder-gray-800 w-full bg-green-700 "
         ></textarea>
       </div>
       {showMessage && (
